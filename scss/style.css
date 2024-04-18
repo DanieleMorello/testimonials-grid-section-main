@@ -21,12 +21,32 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
   background-color: hsl(0, 0%, 81%);
 }
-
-.attribution {
+body main .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  -moz-column-gap: 28px;
+       column-gap: 28px;
+  row-gap: 23px;
+  max-width: 1440px;
+  margin: 165px auto;
+}
+body footer .attribution {
   font-size: 11px;
   text-align: center;
 }
-
-.attribution a {
+body footer .attribution a {
   color: hsl(228, 45%, 44%);
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media (max-width: 768px) {
+  body main .container {
+    margin: 72px auto;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+    row-gap: 23px;
+    padding: 0 20px;
+  }
+}
+/* MEDIA QUERY PER DISPOSITIVI MOBILI CON LARGHEZZA MASSIMA DI 768PX *//*# sourceMappingURL=style.css.map */
