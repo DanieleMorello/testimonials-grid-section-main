@@ -1,0 +1,52 @@
+$moderate-violet: hsl(263, 55%, 52%);
+$very-dark-grayish-blue: hsl(217, 19%, 35%);
+$very-dark-blackish-blue: hsl(219, 29%, 14%);
+$white: hsl(0, 0%, 100%);
+$light-gray: hsl(0, 0%, 81%);
+$light-grayish-blue: hsl(210, 46%, 95%);
+$verified-graduate: hsla(0, 0%, 100%, 50%);
+$review-paragraphs: hsla(0, 0%, 100%, 70%);
+$citation: hsl(215, 6%, 40%);
+// DEFINIZIONE DELLE VARIABILI PER I COLORI
+
+$font-family-barlow: "Barlow Semi Condensed", sans-serif;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-style-normal: normal;
+$font-size: 13px;
+// DEFINIZIONE DELLE VARIABILI PER IL TIPO DI CARATTERE E LO STILE DEL FONT
+
+.barlow-semi-condensed-medium {
+  font-family: $font-family-barlow;
+  font-weight: $font-weight-medium;
+  font-style: $font-style-normal;
+}
+// CLASSE PER IL FONT SEMI-CONDENSATO DI PESO MEDIO
+
+.barlow-semi-condensed-semibold {
+  font-family: $font-family-barlow;
+  font-weight: $font-weight-semibold;
+  font-style: $font-style-normal;
+}
+// CLASSE PER IL FONT SEMI-CONDENSATO DI PESO SEMIBOLD
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// RESET GLOBALE PER MARGINI, PADDING E BOX-SIZING
+
+body {
+  font-size: $font-size;
+  font-family: $font-family-barlow;
+  background-color: $light-gray;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
