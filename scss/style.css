@@ -161,4 +161,15 @@ body footer .attribution a {
     padding-bottom: 32px;
   }
 }
-/* MEDIA QUERY PER DISPOSITIVI MOBILI CON LARGHEZZA MASSIMA DI 1024PX *//*# sourceMappingURL=style.css.map */
+/* MEDIA QUERY PER DISPOSITIVI MOBILI CON LARGHEZZA MASSIMA DI 1024PX */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-template-rows: auto auto;
+  }
+  .container .card {
+    grid-column: unset !important;
+    grid-row: unset !important;
+  }
+}
+/* MEDIA QUERY PER DISPOSITIVI MOBILI CON LARGHEZZA MASSIMA DI 768PX *//*# sourceMappingURL=style.css.map */
