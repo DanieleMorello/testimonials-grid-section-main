@@ -4,9 +4,6 @@ $very-dark-blackish-blue: hsl(219, 29%, 14%);
 $white: hsl(0, 0%, 100%);
 $light-gray: hsl(0, 0%, 81%);
 $light-grayish-blue: hsl(210, 46%, 95%);
-$verified-graduate: hsla(0, 0%, 100%, 50%);
-$review-paragraphs: hsla(0, 0%, 100%, 70%);
-$citation: hsl(215, 6%, 40%);
 // DEFINIZIONE DELLE VARIABILI PER I COLORI
 
 $font-family-barlow: "Barlow Semi Condensed", sans-serif;
@@ -40,24 +37,112 @@ $font-size: 13px;
 body {
   font-size: $font-size;
   font-family: $font-family-barlow;
-  background-color: $light-gray;
-
+  background-color: $light-grayish-blue;
+  // overflow: hidden;
   main {
     .container {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-auto-rows: auto;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, min-content);
       column-gap: 28px;
       row-gap: 23px;
       max-width: 1440px;
-      margin: 165px auto;
+      margin: 165px;
     }
+    .card {
+      border-radius: 10px;
+      padding-top: 27px;
+      padding-left: 32px;
+      // padding-bottom: 32px;
+      &:not(#testimonial-kira) {
+        padding-bottom: 32px;
+      }
+      padding-right: 35px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      .quote {
+        position: absolute;
+        top: 0;
+        right: 95px;
+        img {
+          width: 98px;
+          height: 111px;
+        }
+      }
+      .author-detail {
+        display: flex;
+        align-items: center;
+        img {
+          width: 28px;
+          margin-right: 20px;
+          border-radius: 50%;
+          border: 2px solid $white;
+        }
+        h4,
+        small,
+        .card-info p {
+          color: $light-gray;
+        }
+        h4 {
+          font-weight: $font-weight-semibold;
+        }
+        small {
+          opacity: 0.5;
+        }
+      }
+      .card-heading {
+        margin: 21px 0;
+        font-size: 20px;
+        color: $white;
+        z-index: 1;
+      }
+      .card-info {
+        p {
+          color: hsl(217, 14%, 62%);
+          font-size: $font-size;
+        }
+      }
+    }
+    #testimonial-daniel {
+      background-color: $moderate-violet;
+      grid-area: 1 / 1 / 1 / 3;
+    }
+    #testimonial-jonathan {
+      background-color: $very-dark-grayish-blue;
+      grid-area: 1 / 3 / 1 / 3;
+
+      .card-heading {
+        font-size: 20px;
+      }
+    }
+    #testimonial-jeanette,
+    #testimonial-kira {
+      background-color: $white;
+
+      .card-heading {
+        color: $very-dark-blackish-blue;
+        font-weight: $font-weight-semibold;
+      }
+    }
+    #testimonial-jeanette {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    #testimonial-patrick {
+      background-color: $very-dark-blackish-blue;
+      grid-area: 2 / 2 / 2 / 4;
+    }
+  }
+  #testimonial-kira {
+    //TODO FIX PADDING OF THIS CARD
+    grid-area: -1 / 4 / 1 / 5;
   }
 
   footer {
     .attribution {
-      font-size: 11px;
+      font-size: 15px;
       text-align: center;
+      padding-bottom: 3rem;
       a {
         color: hsl(228, 45%, 44%);
       }
