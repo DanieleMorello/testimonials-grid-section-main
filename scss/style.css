@@ -142,7 +142,7 @@ body footer .attribution a {
     grid-column: 1/3;
   }
   body main .container #testimonial-jonathan {
-    grid-area: 1/3;
+    grid-area: 1/3/1/5;
   }
   body main .container #testimonial-jonathan .card-heading {
     font-size: 27px;
@@ -161,4 +161,4 @@ body footer .attribution a {
     padding-bottom: 32px;
   }
 }
-/* MEDIA QUERY PER DISPOSITIVI MOBILI CON LARGHEZZA MASSIMA DI 768PX *//*# sourceMappingURL=style.css.map */
+/* MEDIA QUERY PER DISPOSITIVI MOBILI CON LARGHEZZA MASSIMA DI 1024PX *//*# sourceMappingURL=style.css.map */
